@@ -140,9 +140,9 @@ export function ProductTabs() {
             }}
           >
             <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="new-arrivals" className="text-xl font-bold">New Arrivals</TabsTrigger>
+              <TabsTrigger value="new-arrivals" className="text-xl font-bold">New Products</TabsTrigger>
               <TabsTrigger value="best-sellers" className="text-xl font-bold">Best Sellers</TabsTrigger>
-              <TabsTrigger value="on-sale" className="text-xl font-bold">On Sale</TabsTrigger>
+              <TabsTrigger value="on-sale" className="text-xl font-bold">Coming Soon</TabsTrigger>
             </TabsList>
             {Object.entries(products).map(([key, items]) => (
               <TabsContent key={key} value={key} className="relative">

@@ -8,20 +8,75 @@ export function PlatformSection() {
     <section className="py-16">
       <div className="container w-full mx-auto px-4">
         <div className="space-y-4">
-          {/* Vendor Platform */}
-          <div className="mx-auto bg-gradient-to-br from-red-600 to-red-800 rounded-xl overflow-hidden">
-            <div className="p-12 text-center text-white">
-              <h2 className="text-3xl font-bold mb-6">VENDOR PLATFORM</h2>
-              <p className="text-xl mb-8 text-white/90">
-                Our dedicated vendor platform is coming soon! Stay tuned for an enhanced business experience.
-              </p>
-              <div className="inline-flex items-center gap-2 bg-white text-red-600 px-6 py-3 rounded-full font-semibold">
-                <BadgeCheck className="w-5 h-5" />
-                Coming Soon
+          {/* Vendor Platform and Loyalty Programme Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Vendor Platform */}
+            <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-xl overflow-hidden">
+              <div className="p-8 text-center text-white h-full flex flex-col justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">VENDOR PLATFORM</h2>
+                  <Image
+                    src="/vendor.png"
+                    alt="Vendor Platform"
+                    width={400}
+                    height={260}
+                    className="mx-auto mb-4 rounded-lg"
+                  />
+                  <p className="text-lg mb-6 text-white/90">
+                    Our dedicated vendor platform is coming soon! Stay tuned for an enhanced business experience.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-white text-red-600 px-4 py-2 rounded-full font-semibold mx-auto">
+                  <BadgeCheck className="w-5 h-5" />
+                  Coming Soon
+                </div>
+              </div>
+            </div>
+
+            {/* Coming Soon Highlight */}
+            <div className="bg-gradient-to-br from-red-500 to-red-700 rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+              <div className="p-8 text-center text-white h-full flex flex-col justify-center items-center">
+                <div className="animate-pulse">
+                  <h2 className="text-4xl font-bold mb-6">COMING SOON</h2>
+                  <div className="w-24 h-24 mx-auto mb-6">
+                    <BadgeCheck className="w-full h-full" />
+                  </div>
+                </div>
+                <p className="text-xl mb-6 text-white/90">
+                  We&apos;re working on something exciting! Stay tuned for our new features and enhanced experiences.
+                </p>
+                <div className="text-2xl font-bold bg-white text-red-600 px-6 py-3 rounded-full">
+                  Q1 2024
+                </div>
+              </div>
+            </div>
+
+
+
+            {/* Loyalty Programme */}
+            <div className="bg-gradient-to-br from-red-700 to-red-900 rounded-xl overflow-hidden">
+              <div className="p-8 text-center text-white h-full flex flex-col justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">LOYALTY PROGRAMME</h2>
+                  <Image
+                    src="/loyalty.png"
+                    alt="Loyalty Programme"
+                    width={400}
+                    height={260}
+                    className="mx-auto mb-4 rounded-lg"
+                  />
+                  <p className="text-lg mb-6 text-white/90">
+                    Earn rewards and exclusive benefits with our upcoming loyalty programme.
+                  </p>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-white text-red-600 px-4 py-2 rounded-full font-semibold mx-auto">
+                  <BadgeCheck className="w-5 h-5" />
+                  Coming Soon
+                </div>
               </div>
             </div>
           </div>
-
+          
           {/* FWRD Section */}
           <div className="mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-4 bg-[#efeeee] rounded-xl overflow-hidden">

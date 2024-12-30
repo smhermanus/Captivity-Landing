@@ -7,7 +7,7 @@ export function RegisterSection() {
     {
       icon: Store,
       title: 'Retail Stores',
-      description: 'Physical stores selling clothing and accessories',
+      description: 'Physical or online stores selling clothing and accessories',
     },
     {
       icon: Building2,
@@ -29,7 +29,7 @@ export function RegisterSection() {
             <div className="p-12">
               {/* Header */}
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4 text-gray-900">WHO CAN REGISTER</h2>
+                <h2 className="text-4xl font-bold mb-4 text-gray-900">WHO CAN REGISTER?</h2>
                 <p className="text-gray-600 text-lg">
                   Join our network of authorized distributors and grow your business with Captivity if you fall under the following categories:
                 </p>
